@@ -1,35 +1,21 @@
-class tile{
-	contructor(x, y){
-		this.s = 10;
+class Tile{
+	constructor(x, y, color){
+		this.s = 100;
 		this.occupied = false;
-		this.c = true;
+		this.color = color;
+		this.x = x;
+		this.y = y;
 	}
 
-	setColor(boolean b){
+	setColor(b){
 		this.c = b;
 	}
-	setOccupied(boolean b){
+	setOccupied(b){
 		this.occupied = b;
 	}
 
-	getcolor(){
-		return this.c;
-	}
-
-	getOccupied(){
-		return this.occupied;
-	}
-
 	show(){
-		if(this.c){
-			console.log("COLOR BLACK");
-			fill(255);
-		}
-		if(!this.c){
-			console.log("COLOR WHITE");
-			fill(0);
-		}
-
-		rect(x, y, this.size, this.size);
+		fill(this.color);
+		rect(this.x, this.y, this.s, this.s);
 	}
 }
