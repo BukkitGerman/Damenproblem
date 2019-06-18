@@ -27,21 +27,6 @@ function setup() {
 	
 }
 
-function playfield(){
-
-
-	/*field = [
-	[[1, false], [0, false], [1, false], [0, false], [1, false], [0, false], [1, false], [0, false]],
-	[[0, false], [1, false], [0, false], [1, false], [0, false], [1, false], [0, false], [1, false]],
-	[[1, false], [0, false], [1, false], [0, false], [1, false], [0, false], [1, false], [0, false]],
-	[[0, false], [1, false], [0, false], [1, false], [0, false], [1, false], [0, false], [1, false]],
-	[[1, false], [0, false], [1, false], [0, false], [1, false], [0, false], [1, false], [0, false]],
-	[[0, false], [1, false], [0, false], [1, false], [0, false], [1, false], [0, false], [1, false]],
-	[[1, false], [0, false], [1, false], [0, false], [1, false], [0, false], [1, false], [0, false]],
-	[[0, false], [1, false], [0, false], [1, false], [0, false], [1, false], [0, false], [1, false]]
-	];*/
-
-}
 
 function draw() {
 	background(100);
