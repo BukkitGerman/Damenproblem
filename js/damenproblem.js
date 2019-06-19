@@ -3,14 +3,15 @@ var size = 10;
 var field = [];
 var root;
 var co = 0;
+var img;
 function setup() {
 	createCanvas(800, 800);
-
+	 img = loadImage('assets/dame.png');
 	var i = 0;
 	for(var x = 0; x < 8; x++){
 		for(var y = 0; y < 8; y++){
 			field[i] = new Tile(x*100,y*100, this.co);
-			i++;	
+			i++;
 			if(co == 0){
 				co = co + 255;
 			}else{
