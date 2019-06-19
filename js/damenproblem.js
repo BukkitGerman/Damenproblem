@@ -3,10 +3,11 @@ var size = 10;
 var field = [];
 var root;
 var co = 0;
-var img;
+let img;
 function setup() {
 	createCanvas(800, 800);
 	 img = loadImage('assets/dame.png');
+
 	var i = 0;
 	for(var x = 0; x < 8; x++){
 		for(var y = 0; y < 8; y++){
@@ -35,4 +36,5 @@ function draw() {
 	for(var i = 0; i < field.length; i++){
 			field[i].show();	
 	}
+	
 }
