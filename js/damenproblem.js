@@ -34,7 +34,20 @@ function setup() {
 function draw() {
 	background(100);
 	for(var i = 0; i < field.length; i++){
-			field[i].show();	
+			field[i].show();
+			check(field[i].x, field[i].y);
+			image(img, 100, 0, 100, 100);	
 	}
-	
+}
+
+function check(posX, posY){
+	for(var i = 0; i < field.length; i++){
+		console.log("i");
+		for(var x = posX; x >= 0; x--){
+			if(field[i].x == x && field[i].getOccupied()){
+				console.log("test");
+			}
+		}
+
+	}
 }

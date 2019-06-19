@@ -7,11 +7,12 @@ class Tile{
 		this.y = y;
 	}
 
-	setColor(b){
-		this.c = b;
-	}
 	setOccupied(b){
 		this.occupied = b;
+	}
+
+	getOccupied(){
+		return this.occupied;
 	}
 
 	show(){
