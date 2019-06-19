@@ -28,9 +28,10 @@ function setup() {
 }
 
 
+
 function draw() {
 	background(100);
 	for(var i = 0; i < field.length; i++){
 			field[i].show();	
-	}	
+	}
 }
